@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100%;
+  color: #555;
+  background-color: #d1d1d1;
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-image: url('../../img/stgobg.png');
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+.header{
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+label{
+  color: rgb(62, 61, 61);
+  font-weight: bold;
+}
+
+.selected-image-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90px;
+  position: relative;
+  margin: auto auto 20px auto;
+  
+}
+
+#image-label {
+  display: block;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+#selected-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  position: relative;
+  border: 5px solid #DCDCDC;
+}
+.round {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  background: #00B4FF;
+  width: 32px;
+  height: 32px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.round input[type="file"] {
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.800);
+  border-radius: 20px;
+}
+
+.container header {
+  text-align: center;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-box input {
+  padding: 5px 10px;
+  width: 100%;
+  border: none;
+  border: thin solid #d4d4d4;
+  font-size: 16px;
+  color: #888;
+  font-family: ubuntu, sans-serif;
+  background-color: #f9f9f9;
+}
+.input-box input::placeholder{
+  font-size: 13px;
+}
+
+.input-box input:focus {
+  outline: none;
+}
+
+.scholarship-details{
+  height: 50px;
+}
+
+.input-box.address {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  width: 120px;
+}
+
+.input-container input {
+  flex: 1; /* Occupy remaining space */
+}
+
+.input-container span {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 20px; /* Added line-height property */
+  transition: all 0.3s;
+  font-weight: bold;
+  border: thin solid #d4d4d4;
+}
+
+.input-container span:last-child {
+  display: none;
+  padding: 12px;
+}
+
+.input-container span:hover {
+  background-color: lightgreen;
+  border: thin solid lightgreen;
+  color: #fff;
+}
+
+.input-container span:last-child:hover {
+  background-color: red;
+  border: thin solid red;
+  color: #fff;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  background-color: #f9f9f9;
+  border: thin solid #d4d4d4;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.date-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-option{
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #d4d4d4;
+}
+
+#previewButton{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #d4d4d4;
+  background-color: #bababa;
+}
+
+button[type="submit"] {
+  display: block;
+  padding: 10px 20px;
+  width: 150px;
+  float: left;
+  font-size: 16px;
+  background-color: green;
+  border: thin solid #d5e4d4;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  transition: opacity 0.15s;
+}
+
+button[type="submit"]:active {
+  background-color: #aedea6;
+  color: #000;
+}
+
+button[type="submit"]:hover {
+ opacity: 0.8;
+}

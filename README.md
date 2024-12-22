@@ -1,4 +1,4 @@
-🎓 Ease-cholar: Web-Based Scholarship Application System
+🎓 Ease-cholar: Web-Based Scholarship Application System (RESEARCH PROJECT)
 
 Technologies: PHP, MySQL, JavaScript, SMS API, HTML, CSS
 
